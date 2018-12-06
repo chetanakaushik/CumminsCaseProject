@@ -1,0 +1,29 @@
+
+nav{
+    background-color: black;
+    border: 2px solid black;
+    width: 101%;
+    font-family: Helvetica;
+    color: white;
+}
+main{
+  padding-top: 50px;
+  padding-left: 460px;
+  min-height: 400px;
+  font-family: Helvetica;
+}
+#footer{
+  padding-left: 340px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+#loginBtn{
+  background-color:  #EE2E24;
+  color: white;
+  font-family: Helvetica;
+  width: 130px;
+}
