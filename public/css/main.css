@@ -6,7 +6,17 @@ nav{
     font-family: Helvetica;
     color: white;
 }
-main{
+#mainServiceCatalog{
+  width: 103%;
+  min-height: 400px;
+  font-family: Helvetica;
+}
+
+#carouselHome{
+  width: 500px;
+  height: 500px;
+}
+#mainLogin{
   padding-top: 40px;
   padding-left: 460px;
   min-height: 400px;
@@ -22,9 +32,12 @@ main{
 
 }
 
-#loginBtn{
-  background-color:  #EE2E24;
+.btn{
+  background-color: #EE2E24;
   color: white;
   font-family: Helvetica;
-  width: 130px;
+  width: auto;
+}
+.btn:hover {
+  color: black;
 }
