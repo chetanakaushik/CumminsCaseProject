@@ -62,7 +62,7 @@
           <div class="card col-lg-4" style="width: 18rem;" v-for="c in client"
             :key="c.clientId" :id="'client-' + c.clientId">
           <div class="card-body">
-            <img class="card-img-top" :src="c.clientLogo" alt="Card image cap">
+            <img class="card-img-top" :src="c.clientLogo" width="180px" height="100px" alt="Card image cap">
             <h5 class="card-title">{{c.clientName}}</h5>
             <h6 class="card-subtitle mb-2 text-muted">Sector - {{c.clientSector}}, Industry - {{c.clientIndustry}}</h6>
             <p class="card-text">{{c.clientDesc}}</p>
