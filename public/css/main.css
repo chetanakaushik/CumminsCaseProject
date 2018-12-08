@@ -41,6 +41,6 @@ nav{
   width: auto;
 }
 
-.btn-hover{
+.btn:hover{
   color: black;
 }
