@@ -12,7 +12,7 @@ class ProductType{
     $this->productType = $row['productType'];
     $this->productImg = $row['productImg'];
     $this->productTypeDesc = $row['productTypeDesc'];
-    $this->productTagLine = $row['productTagLine'];
+    $this->productTagLine = $row['ProductTagLine'];
   }
 
   public static function fetchAll() {
