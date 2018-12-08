@@ -7,6 +7,7 @@ class Client{
   public $clientSector;
   public $clientIndustry;
   public $productType;
+  public $clientLogo;
 
 
   public function __construct($row){
@@ -15,7 +16,7 @@ class Client{
     $this->clientDesc = $row['clientDesc'];
     $this->clientSector = $row['clientSector'];
     $this->clientIndustry = $row['clientIndustry'];
-    $this->productType = $row['productType'];
+    $this->clientLogo = $row['clientLogo'];
 
   }
 
@@ -23,7 +24,7 @@ class Client{
     // 1. Connect to the database
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
     // 2. Prepare the query
-    $sql = 'SELECT c.clientName, c.clientDesc, c.clientSector, c.clientIndustry
+    $sql = 'SELECT c.clientName, c.clientDesc, c.clientSector, c.clientIndustry, c.clientLogo
     FROM Client c, ClientProduct cp where c.clientId = cp.clientId and cp.productId = ?';
     $statement = $db->prepare($sql);
     // 3. Run the query
