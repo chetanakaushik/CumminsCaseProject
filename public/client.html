@@ -58,30 +58,10 @@
 
     <main class = "row" id="mainHome">
 
-
-
-      <div class = "row col-md-12">
-        <div class = "col-lg-6">
-          <h1>Choose Your Cummins Product Category</h1>
-          <p id="twinPagePara" style="font-size:20px;">
-            Browse our outstanding lineup of reliable
-            diesel and alternative-fuel engines, generators, and related products.<br />
-            Select your product to view parts being monitored.
-          </p>
-          <a href="#productTypeList" aria-pressed="true" role="button" class="btn btn-lg rounded-0 active">Browse</a>
-        </div>
-
-        <div class ="col-lg-6">
-          <img src = "img/ProductPic.png" width="90%"/>
-        </div>
-
-        </div>
-
-
       <div class = "row" >
           <div class="card" style="width: 18rem;" v-for="c in client"
             :key="c.clientId" :id="'client-' + c.clientId">
-          <img class="card-img-top" v-bind: src="{{c.clientLogo}}" width="180px" height="100px">
+          <img class="card-img-top" :src="{{c.clientLogo}}" width="180px" height="100px">
           <div class="card-body">
             <h5 class="card-title">{{c.clientName}}</h5>
             <h6 class="card-subtitle mb-2 text-muted">Sector - {{c.clientSector}}, Industry - {{c.clientIndustry}}</h6>
