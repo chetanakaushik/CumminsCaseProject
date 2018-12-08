@@ -62,12 +62,13 @@
 
       <div class = "row col-md-12">
         <div class = "col-lg-6">
-          <h1>Choose Your Cummins Product</h1>
+          <h1>Choose Your Cummins Product Category</h1>
           <p>
             Browse our outstanding lineup of reliable
             diesel and alternative-fuel engines, generators, and related products.
             Select your product to view parts being monitored.
           </p>
+          <a href="#productTypeList" class="btn">Browse</a>
         </div>
 
         <div class ="col-lg-6">
@@ -79,7 +80,7 @@
 
       </div>
 
-      <div class = "row col-md-12">
+      <div class = "row col-md-12" id="productTypeList">
         <div class="card" v-for="c in productType"
         :key="c.productId" :id="'client-' + c.productId">
         <h5 class="card-header">{{c.productType}}</h5>
