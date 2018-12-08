@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="shortcut icon" href="img/cumminsicon.ico" />
-    <title>Cummins Service Portal | Login</title>
+    <title>Product Finder</title>
     <link rel="stylesheet" href = "css/main.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
@@ -58,7 +58,14 @@
 
     <main class = "row" id="mainHome">
 
-      <div class = "col-md-12">
+
+      <div class = "row col-md-12">
+
+        <img src = "img/ProductPic.png" />
+
+      </div>
+
+      <div class = "row col-md-12">
         <div class="card" v-for="c in productType"
         :key="c.productId" :id="'client-' + c.productId">
         <h5 class="card-header">{{c.productType}}</h5>
