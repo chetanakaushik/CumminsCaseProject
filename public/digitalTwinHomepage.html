@@ -74,9 +74,12 @@
         <div class ="col-lg-6">
           <img src = "img/ProductPic.png" width="90%"/>
         </div>
-      </div>
 
-      <div class = "row col-md-12" id="productTypeList">
+        </div>
+            <div class ="row" id="productTypeList">
+            </div>
+
+      <div class = "row col-md-12">
         <div class="card" v-for="c in productType"
         :key="c.productId" :id="'client-' + c.productId">
         <h5 class="card-header">{{c.productType}}</h5>
