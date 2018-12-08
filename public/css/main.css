@@ -20,6 +20,7 @@ nav{
 }
 
 #mainClient{
+  width: 103%;
   padding-left: 100px;
   min-height: 400px;
   font-family: Helvetica;
