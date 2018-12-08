@@ -14,3 +14,4 @@ require 'environment.php';
 /** MODELS **/
 require 'model/ProductType.php';
 require 'model/Client.php';
+require 'model/ProductPurchased.php';
