@@ -28,7 +28,7 @@ class Client{
     $statement = $db->prepare($sql);
     // 3. Run the query
     $success = $statement->execute(
-        [$productId], [$productId]
+        [$productId]
     );
     // 4. Handle the results
     $arr = [];
