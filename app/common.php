@@ -12,4 +12,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'
 require 'environment.php';
 
 /** MODELS **/
-require 'model/Product.php';
+require 'model/ProductType.php';
