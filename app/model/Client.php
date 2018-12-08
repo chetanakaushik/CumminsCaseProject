@@ -19,7 +19,7 @@ class Client{
 
   }
 
-  public static function fetchById(int $productId) {
+  public static function fetchById(int $productId, int $product) {
     // 1. Connect to the database
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
     // 2. Prepare the query
@@ -28,7 +28,7 @@ class Client{
     $statement = $db->prepare($sql);
     // 3. Run the query
     $success = $statement->execute(
-        [$productId]
+        [$productId], [$product]
     );
     // 4. Handle the results
     $arr = [];
