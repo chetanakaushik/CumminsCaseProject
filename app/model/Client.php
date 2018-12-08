@@ -24,11 +24,11 @@ class Client{
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
     // 2. Prepare the query
     $sql = 'SELECT c.clientName, c.clientDesc, c.clientSector, c.clientIndustry, pt.productType
-    FROM Client c, ClientProduct cp, ProductType pt where c.clientId = cp.clientId and cp.productId = ?';
+    FROM Client c, ClientProduct cp, ProductType pt where c.clientId = cp.clientId and cp.productId = ? and pt.productId = ?';
     $statement = $db->prepare($sql);
     // 3. Run the query
     $success = $statement->execute(
-        [$productId]
+        [$productId], [$productId]
     );
     // 4. Handle the results
     $arr = [];
