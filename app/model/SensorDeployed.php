@@ -1,7 +1,7 @@
 <?php
 
 class SensorDeployed{
-  public $sensorDeployedID;
+  public $sensorDeployedId;
   public $sensorId;
   public $purchaseId;
   public $serialNumber;
@@ -9,7 +9,7 @@ class SensorDeployed{
   public $pdtImg;
 
   public function __construct($row){
-    $this->sensorDeployedID = isset($row['sensorDeployedID']) ? intval($row['sensorDeployedID']) : null;
+    $this->sensorDeployedId = isset($row['sensorDeployedId']) ? intval($row['sensorDeployedId']) : null;
     $this->sensorId = intval($row['sensorId']);
     $this->purchaseId = intval($row['purchaseId']);
     $this->serialNumber = $row['serialNumber'];
@@ -22,7 +22,7 @@ public static function getSensorDeployedByID(int $purchaseId) {
     // 1. Connect to the database
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
     // 2. Prepare the query
-    $sql = 'SELECT sd.sensorDeployedID, sd.sensorId, sd.purchaseId, sd.serialNumber,
+    $sql = 'SELECT sd.sensorDeployedId, sd.sensorId, sd.purchaseId, sd.serialNumber,
     sd.deployedDate, sd.pdtImg
      FROM SensorsDeployed sd
     WHERE sd.purchaseId = ?';
