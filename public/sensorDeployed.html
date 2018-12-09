@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="img/cumminsicon.ico" />
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href = "css/main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+<div class = "container-fluid" id = "pdtPurApp">
+<!-- Navbar -->
+<nav class=" row sticky-top navbar navbar-expand-lg navbar-dark">
+  <img class="navbar-brand" src="img/logo.png" alt = "Logo" height="65px" width ="60px">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="serviceCatalog.html">Service Catalog <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">News</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" href="login.html">Login&nbsp;<i class="fas fa-user"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Search&nbsp;<i class="fa fa-search"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Support</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <main class = "row" id="sensorDepApp" v-for="c in sensorsDeployed"
+        :key="c.purchaseId"
+        :id="'sensorsDeployed-' + c.purchaseId">
+      <figure class="figure">
+        <img src="c.pdtImg/400x300" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption">Sensors Deployed on Product</figcaption>
+      </figure>
+    </main>
+
+    <nav class = "row navbar navbar-expand-lg navbar-dark nav nav-center" id="footer">
+      <div class="navbar">
+          <div class="navbar-inner">
+              <ul class="nav">
+                  <li></li>
+              </ul>
+              <ul class="nav nav-center">
+                  <li>
+                    <p id = "footerPara">
+                      © 2018 Cummins Inc., Box 3005, Columbus, IN 47202-3005 U.S.A. <br />
+                      Terms of Use and Disclaimers  |  Recommended System Requirements <br />
+                      Need Assistance? Please click on the Contact Support button in the top right corner of any page.
+                    </p></li>
+
+              </ul>
+              <ul class="nav pull-right">
+                  <li></li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src='js/sensorDeployed.js'></script>
+</body>
+</html>
