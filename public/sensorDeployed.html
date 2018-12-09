@@ -18,7 +18,7 @@
 
 </head>
 <body>
-<div class = "container-fluid" id = "pdtPurApp">
+<div class = "container-fluid" id="sensorDepApp">
 <!-- Navbar -->
 <nav class=" row sticky-top navbar navbar-expand-lg navbar-dark">
   <img class="navbar-brand" src="img/logo.png" alt = "Logo" height="65px" width ="60px">
@@ -56,13 +56,17 @@
   </div>
 </nav>
 
-    <main class = "row" id="sensorDepApp" v-for="c in sensorsDeployed"
-        :key="c.purchaseId"
-        :id="'sensorsDeployed-' + c.purchaseId">
-      <figure class="figure">
-        <img src="c.pdtImg/400x300" class="figure-img img-fluid rounded" alt="">
-        <figcaption class="figure-caption">Sensors Deployed on Product</figcaption>
-      </figure>
+    <main class = "row"  >
+        <div class="card" v-for="c in sensorsDeployed"
+            :key="c.purchaseId"
+            :id="'sensorsDeployed-' + c.purchaseId">
+        <h5 class="card-header">{{c.sensorDeployedId}}</h5>
+          <div class="card-body">
+            <h5 class="card-title">{{c.sensorId}}</h5>
+            <p class="card-text">{{c.serialNumber}}</p>
+            <a :href="'client.html?productId=' + c.productId" class="btn btn-lg rounded-0 active" aria-pressed="true" role="button">View Clients</a>
+          </div>
+        </div>
     </main>
 
     <nav class = "row navbar navbar-expand-lg navbar-dark nav nav-center" id="footer">
