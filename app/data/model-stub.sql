@@ -191,3 +191,38 @@ power varchar(300), torque varchar(300), certification varchar(300), pdtImg varc
 constraint purchased_FK1 foreign key(clientId) references Client(clientId),
 constraint purchased_FK2 foreign key(productId) references ProductType(productId)
 );
+
+
+
+
+
+
+
+INSERT INTO `cummins-project`.`ProductPurchased`
+(`purchaseId`,
+`clientId`,
+`productId`,
+`productSeries`,
+`power`,
+`torque`,
+`certification`,
+`pdtImg`)
+VALUES
+(1, 1, 1, 'X15 Performance Series (2017)',
+'485 - 605  hp & 362 - 451  kW', '1650 - 2050  lb-ft &
+2237 - 2779  N•m', 'EPA 2017', 'img/pdtpur1.png' );
+
+INSERT INTO `cummins-project`.`ProductPurchased`
+(`purchaseId`,
+`clientId`,
+`productId`,
+`productSeries`,
+`power`,
+`torque`,
+`certification`,
+`pdtImg`)
+VALUES
+(2, 1, 1, 'X15 Efficiency Series (2017)',
+'400 - 500  hp &
+298 - 373  kW', '1450 - 1850  lb-ft &
+1966 - 2508  N•m', 'EPA 2017', 'img/pdtpur2.png' );
