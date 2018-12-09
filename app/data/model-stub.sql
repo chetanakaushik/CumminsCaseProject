@@ -238,7 +238,16 @@ INSERT INTO `cummins-project`.`ProductPurchased`
 `certification`,
 `pdtImg`)
 VALUES
-(2, 1, 1, 'X15 (Stage V) for 2019',
+(3, 1, 1, 'X15 (Stage V) for 2019',
 '450 - 675  hp 
 336 - 503  kW', '1700 - 2050  lb-ft 
 2305 - 2779  N•m', 'Stage V', 'img/pdtpur3.png' );
+
+select * from SensorDeployed sd, ProductPurchased pp 
+where sd.purchaseId=1 and pp.purchaseId  = sd.purchaseId;
+
+
+SELECT sd.sensorDeployedId, sd.sensorId, sd.purchaseId, sd.serialNumber,
+    sd.deployedDate, pp.pdtImg
+     FROM SensorDeployed sd, ProductPurchased pp
+    WHERE sd.purchaseId = 1 and pp.purchaseId  = sd.purchaseId;
