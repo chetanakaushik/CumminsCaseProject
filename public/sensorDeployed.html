@@ -57,7 +57,14 @@
 </nav>
 
     <main class = "row"  >
-        <div class="card" v-for="c in sensorsDeployed"
+
+      <figure class="figure" v-for="c in sensorsDeployed"
+          :key="c.purchaseId"
+          :id="'sensorsDeployed-' + c.purchaseId">
+        <img src="c.pdtImg/400x300" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+      </figure>
+        <!-- <div class="card" v-for="c in sensorsDeployed"
             :key="c.purchaseId"
             :id="'sensorsDeployed-' + c.purchaseId">
         <h5 class="card-header">{{c.sensorDeployedId}}</h5>
@@ -66,7 +73,7 @@
             <p class="card-text">{{c.serialNumber}}</p>
             <a :href="'client.html?productId=' + c.productId" class="btn btn-lg rounded-0 active" aria-pressed="true" role="button">View Clients</a>
           </div>
-        </div>
+        </div> -->
     </main>
 
     <nav class = "row navbar navbar-expand-lg navbar-dark nav nav-center" id="footer">
