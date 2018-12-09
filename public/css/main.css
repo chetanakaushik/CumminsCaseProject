@@ -42,7 +42,11 @@ nav{
   font-size: 15px;
   text-align: center;
   font-family: Helvetica;
+}
 
+#mainSenDep{
+  min-height: 400px;
+  font-family: Helvetica;
 }
 
 
