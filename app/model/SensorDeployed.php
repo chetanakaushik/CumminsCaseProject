@@ -24,7 +24,7 @@ public static function getSensorDeployedByID(int $purchaseId) {
     // 2. Prepare the query
     $sql = 'SELECT sd.sensorDeployedId, sd.sensorId, sd.purchaseId, sd.serialNumber,
     sd.deployedDate, sd.pdtImg
-     FROM SensorsDeployed sd
+     FROM SensorDeployed sd
     WHERE sd.purchaseId = ?';
     $statement = $db->prepare($sql);
     // 3. Run the query
