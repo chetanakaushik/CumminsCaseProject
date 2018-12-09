@@ -58,7 +58,9 @@
 
     <main class = "row"  >
 
-      <div class="card ">
+      <div class="card " v-for="c in sensorsDeployed"
+          :key="c.purchaseId"
+          :id="'sensorsDeployed-' + c.purchaseId">
         <img class="card-img w-25" src="c.pdtImg/100px180/?text=Image cap" alt="Card image cap">
         <div class="card-body w-75">
           <h5 class="card-title">{{c.serialNumber}}</h5>
