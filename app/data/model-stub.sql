@@ -226,3 +226,19 @@ VALUES
 '400 - 500  hp &
 298 - 373  kW', '1450 - 1850  lb-ft &
 1966 - 2508  N•m', 'EPA 2017', 'img/pdtpur2.png' );
+
+
+INSERT INTO `cummins-project`.`ProductPurchased`
+(`purchaseId`,
+`clientId`,
+`productId`,
+`productSeries`,
+`power`,
+`torque`,
+`certification`,
+`pdtImg`)
+VALUES
+(2, 1, 1, 'X15 (Stage V) for 2019',
+'450 - 675  hp 
+336 - 503  kW', '1700 - 2050  lb-ft 
+2305 - 2779  N•m', 'Stage V', 'img/pdtpur3.png' );
