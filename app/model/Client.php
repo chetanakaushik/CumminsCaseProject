@@ -24,7 +24,7 @@ class Client{
     // 1. Connect to the database
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
     // 2. Prepare the query
-    $sql = 'SELECT c.clientName, c.clientDesc, c.clientSector, c.clientIndustry, c.clientLogo
+    $sql = 'SELECT c.clientId, c.clientName, c.clientDesc, c.clientSector, c.clientIndustry, c.clientLogo
     FROM Client c, ClientProduct cp where c.clientId = cp.clientId and cp.productId = ?';
     $statement = $db->prepare($sql);
     // 3. Run the query
