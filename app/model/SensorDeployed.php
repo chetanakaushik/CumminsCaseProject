@@ -22,7 +22,9 @@ public static function getSensorDeployedByID(int $purchaseId) {
     // 1. Connect to the database
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
     // 2. Prepare the query
-    $sql = 'SELECT * FROM SensorsDeployed sd, ProductPurchased pp
+    $sql = 'SELECT sd.sensorDeployedID, sd.sensorId, sd.purchaseId, sd.serialNumber,
+    sd.deployedDate, sd.pdtImg
+     FROM SensorsDeployed sd, ProductPurchased pp
     WHERE sd.purchaseId = ? and sd.purchaseId = pp.purchaseId';
     $statement = $db->prepare($sql);
     // 3. Run the query
