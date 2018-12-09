@@ -66,19 +66,6 @@
           <a href="#" class="btn btn-lg rounded-0 active">Monitor KPIs</a>
         </div>
       </div>
-
-
-
-      <div class="card" v-for="c in sensorsDeployed"
-          :key="c.purchaseId"
-          :id="'sensorsDeployed-' + c.purchaseId">
-      <h5 class="card-header">{{c.sensorDeployedId}}</h5>
-        <div class="card-body">
-          <h5 class="card-title">{{c.sensorId}}</h5>
-          <p class="card-text">{{c.serialNumber}}</p>
-          <a :href="'client.html?productId=' + c.productId" class="btn btn-lg rounded-0 active" aria-pressed="true" role="button">View Clients</a>
-        </div>
-      </div>
     </main>
 
     <nav class = "row navbar navbar-expand-lg navbar-dark nav nav-center" id="footer">
