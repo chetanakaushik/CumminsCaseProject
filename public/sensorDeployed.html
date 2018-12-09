@@ -58,22 +58,27 @@
 
     <main class = "row"  >
 
-      <figure class="figure" v-for="c in sensorsDeployed"
+      <div class="card ">
+        <img class="card-img w-25" src="c.pdtImg/100px180/?text=Image cap" alt="Card image cap">
+        <div class="card-body w-75">
+          <h5 class="card-title">{{c.serialNumber}}</h5>
+          <p class="card-text">Deployed Date - {{c.deployedDate}}</p>
+          <a href="#" class="btn btn-lg rounded-0 active">Monitor KPIs</a>
+        </div>
+      </div>
+
+
+
+      <div class="card" v-for="c in sensorsDeployed"
           :key="c.purchaseId"
           :id="'sensorsDeployed-' + c.purchaseId">
-        <img src="c.pdtImg/400x300" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-        <figcaption class="figure-caption">A caption for the above image.</figcaption>
-      </figure>
-        <!-- <div class="card" v-for="c in sensorsDeployed"
-            :key="c.purchaseId"
-            :id="'sensorsDeployed-' + c.purchaseId">
-        <h5 class="card-header">{{c.sensorDeployedId}}</h5>
-          <div class="card-body">
-            <h5 class="card-title">{{c.sensorId}}</h5>
-            <p class="card-text">{{c.serialNumber}}</p>
-            <a :href="'client.html?productId=' + c.productId" class="btn btn-lg rounded-0 active" aria-pressed="true" role="button">View Clients</a>
-          </div>
-        </div> -->
+      <h5 class="card-header">{{c.sensorDeployedId}}</h5>
+        <div class="card-body">
+          <h5 class="card-title">{{c.sensorId}}</h5>
+          <p class="card-text">{{c.serialNumber}}</p>
+          <a :href="'client.html?productId=' + c.productId" class="btn btn-lg rounded-0 active" aria-pressed="true" role="button">View Clients</a>
+        </div>
+      </div>
     </main>
 
     <nav class = "row navbar navbar-expand-lg navbar-dark nav nav-center" id="footer">
