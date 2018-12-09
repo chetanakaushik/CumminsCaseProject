@@ -65,23 +65,28 @@
       </div>
 
       <div class="col-lg-9">
-        <h5 style="color:#EE2E24">{{c.productSeries}}</h5>
-        <table class="table">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">Power</th>
-              <th scope="col">Torque</th>
-              <th scope="col">Certification</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>{{c.power}}</td>
-              <td>{{c.torque}}</td>
-              <td>{{c.certification}}</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="row">
+          <h5 style="color:#EE2E24">{{c.productSeries}}</h5>
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Power</th>
+                <th scope="col">Torque</th>
+                <th scope="col">Certification</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{c.power}}</td>
+                <td>{{c.torque}}</td>
+                <td>{{c.certification}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row">
+          <a href="#" class="btn btn-lg rounded-0 active">Check Parts Performance</a>
+          </div>
       </div>
 
     </main>
