@@ -8,6 +8,12 @@ nav{
     font-family: Helvetica;
     color: white;
 }
+
+#mainPdtPur{
+  min-height: 400px;
+  font-family: Helvetica;
+  padding-top: 20px;
+}
 #mainServiceCatalog{
   width: 103%;
   min-height: 400px;
