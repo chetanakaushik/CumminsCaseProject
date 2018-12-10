@@ -16,3 +16,4 @@ require 'model/ProductType.php';
 require 'model/Client.php';
 require 'model/ProductPurchased.php';
 require 'model/SensorDeployed.php';
+require 'model/SensorTimeSeries.php';
