@@ -10,13 +10,13 @@ nav{
 }
 
 #mainPdtPur{
-  min-height: 400px;
+  min-height: 2000px;
   font-family: Helvetica;
   margin-top: 40px;
 }
 #mainServiceCatalog{
   width: 103%;
-  min-height: 1000px;
+  min-height: 2000px;
   font-family: Helvetica;
 }
 
@@ -26,13 +26,13 @@ nav{
 }
 
 #mainClient{
-  min-height: 400px;
+  min-height: 2000px;
   font-family: Helvetica;
 }
 #mainLogin{
   padding-top: 40px;
   padding-left: 460px;
-  min-height: 400px;
+  min-height: 2000px;
   font-family: Helvetica;
 }
 #footer{
@@ -45,7 +45,7 @@ nav{
 }
 
 #mainSenDep{
-  min-height: 400px;
+  min-height: 2000px;
   font-family: Helvetica;
 }
 
